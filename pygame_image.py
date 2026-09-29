@@ -27,13 +27,13 @@ def main():
         key_lst=pg.key.get_pressed()
 
         if key_lst[pg.K_UP]:
-            ko_rct.move_ip(0, -1)
+            y-=1
         if key_lst[pg.K_DOWN]:
-            ko_rct.move_ip(0, +1)
+            y+=1
         if key_lst[pg.K_LEFT]:
-            ko_rct.move_ip(-1, 0)
+            x-=1
         if key_lst[pg.K_RIGHT]:
-            ko_rct.move_ip(+2, 0)
+            x+=2
 
         ko_rct.move_ip(x, y)
         
